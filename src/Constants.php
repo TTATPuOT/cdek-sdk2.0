@@ -23,6 +23,18 @@ class Constants
     public const HOOK_PRINT_STATUS = 'PRINT_FORM';
 
     /**
+     * Хук: DOWNLOAD_PHOTO
+     * @var string
+     */
+    public const HOOK_DOWNLOAD_PHOTO = 'DOWNLOAD_PHOTO';
+
+    /**
+     * Хук: PREALERT_CLOSED
+     * @var string
+     */
+    public const HOOK_PREALERT_CLOSED = 'PREALERT_CLOSED';
+
+    /**
      * Хук: задел на будущее
      * @var string
      */
