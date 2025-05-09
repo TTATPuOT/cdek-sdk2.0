@@ -24,7 +24,6 @@ class CitySuggest
 
     /**
      * Наименование населенного пункта СДЭК (город, район, регион, страна)
-     * @example RU, DE, TR
      * @Type("string")
      * @var string
      */
