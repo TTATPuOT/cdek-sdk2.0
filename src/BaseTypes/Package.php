@@ -20,6 +20,13 @@ class Package extends Base
     public $number;
 
     /**
+     * Штрихкод упаковки в ИС СДЭК
+     * @Type("string")
+     * @var string
+     */
+    public $barcode;
+
+    /**
      * Общий вес (в граммах)
      * @Type("int")
      * @var int
@@ -74,6 +81,13 @@ class Package extends Base
      * @var Item[]
      */
     public $items;
+
+    /**
+     * Уникальный номер упаковки в ИС СДЭК. Обязательно для уже существующей в заказе упаковки
+     * @Type("string")
+     * @var string
+     */
+    public $package_id;
 
     /**
      * Package constructor.

@@ -35,11 +35,25 @@ class OrderInfo
     public $type;
 
     /**
+     * Дополнительные типы заказа
+     * @Type("int")
+     * @var int[]
+     */
+    public $additional_order_types = [];
+
+    /**
      * Признак возвратного заказа
      * @Type("bool")
      * @var bool
      */
     public $is_return;
+
+    /**
+     * Признак реверсного заказа
+     * @Type("bool")
+     * @var bool
+     */
+    public $is_reverse;
 
     /**
      * Номер заказа в системе СДЭК

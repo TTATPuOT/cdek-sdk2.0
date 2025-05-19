@@ -27,18 +27,19 @@ class Statuses
     public $name;
 
     /**
-     * Дополнительный код статуса
-     * @Type("string")
-     * @var string
-     */
-    public $reason_code;
-
-    /**
      * Дата и время установки статуса
      * @Type("string")
      * @var string
      */
     public $date_time;
+
+
+    /**
+     * Дополнительный код статуса
+     * @Type("string")
+     * @var string
+     */
+    public $reason_code;
 
     /**
      * Наименование города(места), где произошло изменение статуса
@@ -48,9 +49,16 @@ class Statuses
     public $city;
 
     /**
-     * Код населенного пункта возникновения статуса
-     * @Type("int")
-     * @var int
+     * Идентификатор места (города) возникновения статуса
+     * @Type("string")
+     * @var string
      */
-    public $city_code;
+    public $city_uuid;
+
+    /**
+     * Признак удаления статуса
+     * @Type("bool")
+     * @var bool
+     */
+    public $deleted;
 }
